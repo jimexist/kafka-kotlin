@@ -49,3 +49,7 @@ gradle-app.setting
 .classpath
 
 # End of https://www.toptal.com/developers/gitignore/api/kotlin,gradle
+kafka_2.13-3.1.0.tgz
+kafka_2.13-3.1.0
+.idea/
+bin/
