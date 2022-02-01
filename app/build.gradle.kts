@@ -8,8 +8,7 @@
 
 plugins {
     // Apply the org.jetbrains.kotlin.jvm Plugin to add support for Kotlin.
-    id("org.jetbrains.kotlin.jvm") version "1.5.31"
-
+    id("org.jetbrains.kotlin.jvm") version "1.6.0"
     // Apply the application plugin to add support for building a CLI application in Java.
     application
 }
@@ -22,16 +21,20 @@ repositories {
 dependencies {
     // Align versions of all Kotlin components
     implementation(platform("org.jetbrains.kotlin:kotlin-bom"))
-
     // Use the Kotlin JDK 8 standard library.
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-
     // This dependency is used by the application.
     implementation("com.google.guava:guava:30.1.1-jre")
-
+    // https://mvnrepository.com/artifact/ch.qos.logback/logback-classic
+    implementation("ch.qos.logback:logback-classic:1.3.0-alpha13")
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
+    implementation("org.slf4j:slf4j-api:2.0.0-alpha6")
+    // https://mvnrepository.com/artifact/org.apache.avro/avro
+    implementation("org.apache.avro:avro:1.11.0")
+    // https://mvnrepository.com/artifact/org.apache.kafka/kafka-clients
+    implementation("org.apache.kafka:kafka-clients:3.1.0")
     // Use the Kotlin test library.
     testImplementation("org.jetbrains.kotlin:kotlin-test")
-
     // Use the Kotlin JUnit integration.
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
 }
