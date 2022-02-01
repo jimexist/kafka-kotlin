@@ -21,6 +21,7 @@ repositories {
 dependencies {
     // Align versions of all Kotlin components
     implementation(platform("org.jetbrains.kotlin:kotlin-bom"))
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0")
     // Use the Kotlin JDK 8 standard library.
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     // This dependency is used by the application.
@@ -33,6 +34,8 @@ dependencies {
     implementation("org.apache.avro:avro:1.11.0")
     // https://mvnrepository.com/artifact/org.apache.kafka/kafka-clients
     implementation("org.apache.kafka:kafka-clients:3.1.0")
+    // https://mvnrepository.com/artifact/org.apache.kafka/kafka-streams
+    implementation("org.apache.kafka:kafka-streams:3.1.0")
     // Use the Kotlin test library.
     testImplementation("org.jetbrains.kotlin:kotlin-test")
     // Use the Kotlin JUnit integration.
